@@ -27,7 +27,7 @@ class Header extends Component {
 					<Menu.Item name='amozesh' active={activeItem === 'messages'} onClick={this.handleItemClick} />
 					<Menu.Item name='nemone kar' active={activeItem === 'messages'} onClick={this.handleItemClick} />
 					<Menu.Item name='nemone kar' active={activeItem === 'messages'} onClick={this.handleItemClick} />
-					<Menu.Item name='nemone kar' active={activeItem === 'messages'} onClick={this.handleItemClick} />
+					
 					
 					
 					<Menu.Menu position='right'>
