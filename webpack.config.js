@@ -1,6 +1,13 @@
 var webpack = require ('webpack');
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+// https://github.com/webpack/webpack/issues/2537
+const IS_PRODUCTION = process.env.NODE_ENV === 'production';
+
+//todo: console
+console.log('IS_PRODUCTION', IS_PRODUCTION);
+
 var config = {
 	// This object for entry file for browser
 	entry: './main.js',
