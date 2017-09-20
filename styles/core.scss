@@ -1,0 +1,98 @@
+  //@import 'base';
+//@import '~normalize.css/normalize';
+@import url(https://fonts.googleapis.com/earlyaccess/notonaskharabic.css);
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #f8f8f8;
+}
+
+  /* webkit solution */
+  ::-webkit-input-placeholder { text-align:right; }
+  /* mozilla solution */
+  input:-moz-placeholder { text-align:right; }
+
+#app {
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+input:required, input:invalid, textarea:required, textarea:invalid {
+  box-shadow: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Naskh Arabic', Helvetica, serif !important;
+}
+p, div {
+  font-family: 'Noto Naskh Arabic', Helvetica, serif !important;
+}
+
+a, a:hover, a:visited, a:active a:focus {
+  color: #5a227e
+}
+
+  .fade-enter {
+    opacity: 0.01;
+  }
+
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+
+  .fade-leave {
+    opacity: 1;
+  }
+
+  .fade-leave.fade-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
+
+  .fade-appear {
+    opacity: 0.01;
+  }
+
+  .fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+  }
+
+  .height-enter {
+    opacity: 0.01;
+    height: 0;
+  }
+
+  .height-enter.height-enter-active {
+    height: 100px;
+    opacity: 1;
+    transition: all 300ms ease-in;
+  }
+
+  .height-leave {
+    height: 100px;
+  }
+
+  .height-leave.height-leave-active {
+    height: 0;
+    opacity: 0.01;
+    transition: all 100ms ease-in;
+  }
+
+/*
+  1- Where to find Noto naskh arabic web-font?
+    https://fonts.google.com/earlyaccess
+*/
