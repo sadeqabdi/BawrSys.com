@@ -12,8 +12,8 @@ var config = {
 	// This object for entry file for browser
 	entry: './main.js',
 	output: {
-		path:'/',
-		filename: 'index.js',
+		path: path.join(__dirname, 'public'),
+		filename: 'bundle.js',
 	},
 	plugins: [
 		new ExtractTextPlugin('styles.css'),
@@ -42,7 +42,7 @@ var config = {
 			{
 				test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
 				loader: 'url-loader?limit=100000&name=/[hash].[ext]',
-			}, // This code for red css, scss an loader css
+			}, // This code for red css,scss an loader css
 			{
 				test: /\.(css|scss)$/,
 				loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader']),
