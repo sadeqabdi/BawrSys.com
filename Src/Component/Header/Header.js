@@ -1,4 +1,6 @@
 import React, { Component, PropTypes } from 'react';
+import Scroll from 'react-scroll'; // Imports all Mixins
+import {scroller} from 'react-scroll'; //Imports scroller mixin, can use as scroller.scrollTo()
 import { Menu, Button, Card, Icon,Image, Form, TextArea } from 'semantic-ui-react';
 import './Header.css';
 const s = {
@@ -16,7 +18,7 @@ const s = {
     	marginTop: '30px',
 		width: '100%',
         backgroundImage:
-			'url(https://www.hotfootdesign.co.uk/wp-content/uploads/2016/01/Hotfoot-Team.jpg)',
+			'url(https://www.hotfootdesign.co.uk/wp-content/uploads/2016/01/Hotfoot-Team.jpg)' ,
 		height: '740px'
 	},
     content2: {
@@ -36,6 +38,13 @@ const extraa = (
 		<Icon name='facebook square' />
 	</a>
 );
+// Or Access Link,Element,etc as follows
+let Link       = Scroll.Link;
+let Element    = Scroll.Element;
+let Events     = Scroll.Events;
+let scroll     = Scroll.animateScroll;
+let scrollSpy  = Scroll.scrollSpy;
+
 
 class Header extends Component {
 	state = {
@@ -89,7 +98,10 @@ class Header extends Component {
 					<Card.Group>
 						<Card className='width'>
 							<Card.Content>
-								<Image floated='right' size='mini' src='https://www.hotfootdesign.co.uk/wp-content/uploads/2016/01/Hotfoot-Team.jpg' />
+								<Image
+									floated='right'
+									size='mini'
+									src='https://www.hotfootdesign.co.uk/wp-content/uploads/2016/01/Hotfoot-Team.jpg' />
 								<Card.Header>
 									Faxradin Abdi
 								</Card.Header>
@@ -100,12 +112,17 @@ class Header extends Component {
 								</Card.Meta>
 								<div style={{marginTop: '90px'}}>
 									<Card.Description>
-										CTO and manager project <strong style={{color: '#5a227e'}}>in bawerSysterm company</strong>
+										CTO and manager project
+										<strong style={{color: '#5a227e'}}>
+											in bawerSysterm company
+										</strong>
 									</Card.Description>
 								</div>
 							</Card.Content>
 							<Card.Content extra>
-								<div className='ui two buttons' style={{display: 'flex', justifyContent: 'space-around'}}>
+								<div
+									className='ui two buttons'
+									style={{display: 'flex', justifyContent: 'space-around'}}>
 								    <a href="https://harzaan.com/">
 									<Button basic color='green'>
 										<div style={{position: 'relative', left: '15px', color: '#3b5998'}}>
@@ -125,7 +142,10 @@ class Header extends Component {
 						</Card>
 						<Card className='width'>
 							<Card.Content>
-								<Image floated='right' size='mini' src='https://www.hotfootdesign.co.uk/wp-content/uploads/2016/01/Hotfoot-Team.jpg' />
+								<Image
+									floated='right' size='mini'
+									src='https://www.hotfootdesign.co.uk/wp-content/uploads/2016/01/Hotfoot-Team.jpg'
+								/>
 								<Card.Header>
 									Sadeq Abdi
 								</Card.Header>
@@ -136,12 +156,18 @@ class Header extends Component {
 								</Card.Meta>
 								<div style={{marginTop: '90px'}}>
 									<Card.Description>
-										Senior Programer  <strong style={{color: '#5a227e'}}>in bawerSysterm company</strong>
+										Senior Programer
+										<strong style={{color: '#5a227e'}}>
+											in bawerSysterm company
+										</strong>
 									</Card.Description>
 								</div>
 							</Card.Content>
 							<Card.Content extra>
-								<div className='ui two buttons' style={{display: 'flex', justifyContent: 'space-around'}}>
+								<div
+									className='ui two buttons'
+									style={{display: 'flex', justifyContent: 'space-around'}}
+								>
 									<a href="https://harzaan.com/">
 										<Button basic color='green'>
 											<div style={{position: 'relative', left: '13px', color: '#3b5998'}}>
@@ -161,7 +187,11 @@ class Header extends Component {
 						</Card>
 						<Card className='width'>
 							<Card.Content>
-								<Image floated='right' size='mini' src='https://www.hotfootdesign.co.uk/wp-content/uploads/2016/01/Hotfoot-Team.jpg' />
+								<Image
+									floated='right'
+									size='mini'
+									src='https://www.hotfootdesign.co.uk/wp-content/uploads/2016/01/Hotfoot-Team.jpg'
+								/>
 								<Card.Header>
 									Reza Faramarzi
 								</Card.Header>
@@ -172,12 +202,18 @@ class Header extends Component {
 								</Card.Meta>
 								<div style={{marginTop: '90px'}}>
 									<Card.Description>
-										Marketing Manager <strong style={{color: '#5a227e'}}>in bawerSysterm company</strong>
+										Marketing Manager
+										<strong style={{color: '#5a227e'}}>
+											in bawerSysterm company
+										</strong>
 									</Card.Description>
 								</div>
 							</Card.Content>
 							<Card.Content extra>
-								<div className='ui two buttons' style={{display: 'flex', justifyContent: 'space-around'}}>
+								<div
+									className='ui two buttons'
+									style={{display: 'flex', justifyContent: 'space-around'}}
+								>
 									<a href="https://harzaan.com/">
 										<Button basic color='green'>
 											<div style={{position: 'relative', left: '15px', color: '#3b5998'}}>
@@ -197,7 +233,11 @@ class Header extends Component {
 						</Card>
 						<Card className='width'>
 							<Card.Content>
-								<Image floated='right' size='mini' src='https://www.hotfootdesign.co.uk/wp-content/uploads/2016/01/Hotfoot-Team.jpg' />
+								<Image
+									floated='right'
+									size='mini'
+									src='https://www.hotfootdesign.co.uk/wp-content/uploads/2016/01/Hotfoot-Team.jpg'
+								/>
 								<Card.Header>
 									Shadi xoshnod
 								</Card.Header>
@@ -208,12 +248,18 @@ class Header extends Component {
 								</Card.Meta>
 								<div style={{marginTop: '90px'}}>
 									<Card.Description>
-										Designer and developer <strong style={{color: '#5a227e'}}>in bawerSysterm company</strong>
+										Designer and developer
+										<strong style={{color: '#5a227e'}}>
+											in bawerSysterm company
+										</strong>
 									</Card.Description>
 								</div>
 							</Card.Content>
 							<Card.Content extra>
-								<div className='ui two buttons' style={{display: 'flex', justifyContent: 'space-around'}}>
+								<div
+									className='ui two buttons'
+									style={{display: 'flex', justifyContent: 'space-around'}}
+								>
 									<a href="https://harzaan.com/">
 										<Button basic color='green'>
 											<div style={{position: 'relative', left: '15px', color: '#3b5998'}}>
@@ -239,7 +285,10 @@ class Header extends Component {
 				<div style={{backgroundColor: '#fffff'}}>
 					<div>
 						<Card.Group itemsPerRow={2}>
-							<Card color='red' image= 'https://stocknews.com/wp-content/uploads/2017/07/facebook-fb-alternate.jpg'/>
+							<Card
+								color='red'
+								image= 'https://stocknews.com/wp-content/uploads/2017/07/facebook-fb-alternate.jpg'
+							/>
 							<Card
 								href='#card-example-link-card'
 								header='Elliot Baker'
@@ -261,7 +310,10 @@ class Header extends Component {
 					</div>
 					<div>
 						<Card.Group itemsPerRow={2}>
-							<Card color='red' image='https://i1.wp.com/wptavern.com/wp-content/uploads/2015/12/telegram.png?ssl=1' />
+							<Card
+								color='red'
+								image='https://i1.wp.com/wptavern.com/wp-content/uploads/2015/12/telegram.png?ssl=1'
+							/>
 							<Card
 								href='#card-example-link-card'
 								header='Elliot Baker'
@@ -278,9 +330,15 @@ class Header extends Component {
 								meta='Friend'
 								description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
 							/>
-							<Card color='red' image='https://sd-cdn.fr/wp-content/uploads/2017/09/LinkedIn_HP.jpg' />
+							<Card
+								color='red'
+								image='https://sd-cdn.fr/wp-content/uploads/2017/09/LinkedIn_HP.jpg'
+							/>
 						</Card.Group>
 					</div>
+				</div>
+				<div style={{backgroundColor: '#46b5ef', height: '400px'}}>
+					a;sdlkfja;ldk
 				</div>
 				<h1 style={{textAlign: 'center', color: '#5a227e', marginTop: '30px'}}>
 					ارتباط با ما
