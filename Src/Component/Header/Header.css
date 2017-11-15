@@ -1,10 +1,29 @@
 .ui.secondary.menu {
     font-family: 'Amiri', serif;
+    color: red;
+    font-size: 25px;
+}
+.ui.stackable.menu  {
+    font-family: 'Amiri', serif;
+    background: none;
+}
+.ui.secondary.menu .item{
+    color: white;
+}
+.ui.two.cards{
+    width: 1100px;
+    margin-right:12%;
+}
+.item{
+    color: white;
 }
 .ui.positive.button{
     font-family: 'Amiri', serif;
     color: black;
     background-color: white;
+}
+.ui.secondary.sadeq.menu{
+    background: red;
 }
 .ui.card.width{
     font-family: 'Amiri', serif;
@@ -21,7 +40,7 @@
 }
 .ui.mini.form{
     width: 800px;
-    margin-right: 13%;
+    margin: auto;
     margin-top: 7%;
 }
 .ui.button{
@@ -29,6 +48,17 @@
     color: white;
     background-color: #5a227e;
 }
+.ui.button.But{
+    width: 1000px;
+}
 .ui.input{
     background-color: #f8f8f8;
+    height: 55px;
+}
+.ui.mini.form{
+    width: 1000px;
+}
+.ui.medium.image{
+    width: 600px;
+    height: 300px;;
 }
