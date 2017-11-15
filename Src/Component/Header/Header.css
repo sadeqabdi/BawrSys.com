@@ -62,3 +62,6 @@
     width: 600px;
     height: 100%;
 }
+.ui.positive.button{
+    background: #3D9199;
+}

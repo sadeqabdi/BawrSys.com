@@ -26,13 +26,17 @@ class Project extends Component {
 							<section
 								style={{display: 'flex', margin: 'auto',  width: '1200px'}}
 							>
-								<Image src='https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/how-to-setup-website.jpg' size='medium' />
+								<Image src='https://i.ytimg.com/vi/6RJaREKVnDA/maxresdefault.jpg' size='medium' />
 								<div style={{margin: 'auto'}}>
 									<p style={{marginRight: '150px', marginTop: '50px', fontSize: '30px', fontWight: 'bold'}}>
 										<p><a href="https://www.hotorder.co.uk">سایت خرید و فروش بی واسطه</a></p>
 										<p style={{marginRight: '50px'}}>april 20,2013</p>
 										<div style={{marginRight: '50px'}}>
-											<Button positive><a href="https://www.harzaan.com" target="_blank">ورود به سایت</a></Button>
+											<Button positive>
+												<a href="https://www.harzaan.com" target="_blank"  style={{color: 'white'}}>
+													ورود به سایت
+												</a>
+											</Button>
 										</div>
 									</p>
 								</div>
@@ -43,20 +47,28 @@ class Project extends Component {
 										<p><a href="https://www.hotorder.co.uk">سایت سفارش غذای آنلاین</a></p>
 										<p style={{marginRight: '50px'}}>april 20,2013</p>
 										<div style={{marginRight: '50px'}} onMouseEnter={s.color}>
-											<Button positive ><a href="https://www.hotorder.co.uk" target="_blank">ورود به سایت</a></Button>
+											<Button positive >
+												<a href="https://www.hotorder.co.uk" target="_blank" style={{color: 'white'}}>
+													ورود به سایت
+												</a>
+											</Button>
 										</div>
 									</p>
 								</div>
-									<Image src='http://tweakyourbiz.com/marketing/files/wordpress-logo.png' size='medium' />
+									<Image src='http://www.udeserve.in/blog/wp-content/uploads/2013/09/Website.jpg' size='medium' />
 							</section>
 							<section style={{display: 'flex', margin: 'auto',  width: '1200px'}}>
-								<Image src='https://static-wix-blog.wix.com/blog/wp-content/uploads/2016/09/Beginner%E2%80%99s-Guide-How-to-Promote-A-New-Website_featured.png' size='medium' />
+								<Image src='https://websitesetup.org/wp-content/uploads/2013/11/bluehost-landing-page.png' size='medium' />
 								<div style={{margin: 'auto'}}>
 									<p style={{marginRight: '150px', marginTop: '120px', fontSize: '30px', fontWight: 'bold'}}>
 										<p><a href="https://www.hotorder.co.uk">سایت اشتراک عکس</a></p>
 										<p style={{marginRight: '50px'}}>april 20,2013</p>
 										<div style={{marginRight: '50px'}}>
-											<Button positive><a href="https://www.fotomantic.com" target="_blank">ورود به سایت</a></Button>
+											<Button positive>
+												<a href="https://www.fotomantic.com" target="_blank" style={{color: 'white'}}>
+													ورود به سایت
+												</a>
+											</Button>
 										</div>
 									</p>
 								</div>

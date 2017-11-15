@@ -110,12 +110,8 @@ class Header extends Component {
 		scrollToComponent(this.project, { offset: -70, align: 'top', duration: 1400})
 	};
 	handleClick3 = () => {
-		scrollToComponent(this.conectus, { offset: -1100, align: 'middle', duration: 1300, ease:'inCirc'})
+		scrollToComponent(this.conectus, { offset: -1200, align: 'middle', duration: 1000, ease:'inCirc'})
 	};
-	handleClick4 = () => {
-		scrollToComponent(this.four, {offset: 0, align: 'middle', duration: 500, ease:'inExpo'})
-	};
-
 	render() {
 		const { activeItem, scroll } = this.state;
 		return (
@@ -183,7 +179,7 @@ class Header extends Component {
 						<Conectus/>
 					</div>
 				</section>
-				<section className="conectus" ref={(section) => {this.conectus = section;}}>
+				<section className="footer" ref={(section) => {this.footer = section;}}>
 					<div>
 						<Footer/>
 					</div>

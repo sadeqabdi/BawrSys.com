@@ -6,7 +6,7 @@ const s ={
 		display: 'block',
 		height: '100%',
 		width: '100%',
-		background: 'url(https://www.cebglobal.com/talentdaily/files/2017/10/late-laptop-work.jpg) fixed',
+		background: 'url(https://umad.com/img/2015/1/dark-geometric-wallpaper-176-205-hd-wallpapers.jpg) fixed',
 		backgroundSize: 'cover',
 		position: 'relative',
 	},
