@@ -2,6 +2,8 @@
 import React, { Component, PropTypes } from 'react';
 // Local
 import {  Button, Card, Icon,Image} from 'semantic-ui-react';
+import ScrollEffect from 'react-scroll-effects';
+
 class Staff extends Component {
 	// render
 	render () {
@@ -9,13 +11,15 @@ class Staff extends Component {
 		return (
 			<div>
 				<div style={{background: '#e5f0f1', height: '100%'}}>
-					<h1 style={{textAlign: 'center', color: '#5a227e',position: 'relative', top: '60px'}}>
+					<ScrollEffect animate="zoomInUp" queueClass="queue" duration="100" queueDuration=".9">
+					<h1 style={{textAlign: 'center', color: 'black',position: 'relative', top: '60px'}}>
 						آنچه ما انجام می دهیم ...
 					</h1>
 					<div
 						style={{display: 'flex',
 							justifyContent: 'space-around',
 							marginTop: '180px', marginBottom: '30px'}}
+					    className="queue"
 					>
 						<div>
 							<div style={{background: '#ffffff', width: '300px', height: '170px	'}}>
@@ -48,6 +52,7 @@ class Staff extends Component {
 							</div>
 						</div>
 					</div>
+					</ScrollEffect>
 					<div style={{marginBottom: '100px'}}>
 					</div>
 				</div>

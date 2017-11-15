@@ -13,14 +13,19 @@ class Project extends Component {
 	render () {
 		// return
 		return (
-			<div>
+			<section
+				className="proje"
+				ref={(section) => {this.proje = section;}}
+			>
 				<div style={{background: '#ffffff', height: '100%'}}>
-					<h1 style={{textAlign: 'center', color: '#5a227e', marginBottom: '180px',position: 'relative', top: '60px'}}>
+					<h1 style={{textAlign: 'center', color: 'black', marginBottom: '180px',position: 'relative', top: '60px'}}>
 						معرفی پروژه های شرکت
 					</h1>
 					<div style={{backgroundColor: '#fffff'}}>
 						<div>
-							<div style={{display: 'flex', margin: 'auto',  width: '1200px'}}>
+							<section
+								style={{display: 'flex', margin: 'auto',  width: '1200px'}}
+							>
 								<Image src='https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/how-to-setup-website.jpg' size='medium' />
 								<div style={{margin: 'auto'}}>
 									<p style={{marginRight: '150px', marginTop: '50px', fontSize: '30px', fontWight: 'bold'}}>
@@ -31,8 +36,8 @@ class Project extends Component {
 										</div>
 									</p>
 								</div>
-							</div>
-							<div style={{display: 'flex', margin: 'auto', justifyContent: 'space-between',  width: '1200px'}}>
+							</section>
+							<section style={{display: 'flex', margin: 'auto', justifyContent: 'space-between',  width: '1200px'}}>
 								<div style={{margin: 'auto'}}>
 									<p style={{marginLeft: '110px', marginTop: '60px', fontSize: '30px', fontWight: 'bold'}}>
 										<p><a href="https://www.hotorder.co.uk">سایت سفارش غذای آنلاین</a></p>
@@ -43,8 +48,8 @@ class Project extends Component {
 									</p>
 								</div>
 									<Image src='http://tweakyourbiz.com/marketing/files/wordpress-logo.png' size='medium' />
-							</div>
-							<div style={{display: 'flex', margin: 'auto',  width: '1200px'}}>
+							</section>
+							<section style={{display: 'flex', margin: 'auto',  width: '1200px'}}>
 								<Image src='https://static-wix-blog.wix.com/blog/wp-content/uploads/2016/09/Beginner%E2%80%99s-Guide-How-to-Promote-A-New-Website_featured.png' size='medium' />
 								<div style={{margin: 'auto'}}>
 									<p style={{marginRight: '150px', marginTop: '120px', fontSize: '30px', fontWight: 'bold'}}>
@@ -55,13 +60,13 @@ class Project extends Component {
 										</div>
 									</p>
 								</div>
-							</div>
+							</section>
 						</div>
 						<div style={{marginBottom: '100px'}}>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 		);
 	}
 }

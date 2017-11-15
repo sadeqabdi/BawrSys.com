@@ -18,7 +18,7 @@ class Conectus extends Component {
 			<div>
 				<div style={{background: '#e5f0f1', height: '100%'}}>
 					<div style={{background: '#e5f0f1'}}>
-						<h1 style={{textAlign: 'center', color: '#5a227e', position: 'relative', top: '60px'}}>
+						<h1 style={{textAlign: 'center', color: 'black', position: 'relative', top: '60px'}}>
 							ارتباط با ما
 						</h1>
 						<div style={{marginTop: '180px', height: '450px'}}>
@@ -55,40 +55,6 @@ class Conectus extends Component {
 						</GoogleMapReact>
 					</div>
 					<div style={{marginBottom: '180px'}}></div>
-				</div>
-				<div style={{
-					border: '1px solid', height: '200px', background: '#20303c',color: 'white',
-					borderBottom: 'none', borderRight: 'none', borderLeft: 'none'
-				}}>
-					<div style={{display: 'flex', justifyContent: 'center', marginTop: '60px'}}>
-						<div style={{marginLeft: '70px'}}>
-							<p>
-								Sanandaj, Kurdistan Province, Iran
-							</p>
-						</div>
-						<div style={{marginLeft: '160px'}}>
-							<p>
-								hellow@bawersystem.com
-							</p>
-						</div>
-						<div style={{display: 'flex'}}>
-							<div>
-								<Icon  name='linkedin'  size='small' />
-							</div>
-							<div>
-								<Icon  name='twitter'  size='small' />
-							</div>
-							<div>
-								<Icon  name='facebook f'  size='small' />
-							</div>
-						</div>
-					</div>
-					<div style={{display: 'flex',justifyContent: 'center',marginTop: '70px', fontSize: '12px', color: 'white'}}>
-						<p>
-							BY BAWERSYSTEM. PROUDLY CREATED WITH WIX.COM
-						</p>
-						<Icon  name='copyright'  size='small' />
-					</div>
 				</div>
 			</div>
 		);

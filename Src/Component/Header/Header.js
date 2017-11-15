@@ -1,11 +1,11 @@
 import React, { Component, PropTypes } from 'react';
-import Scroll from 'react-scroll'; // Imports all Mixins
-import {scroller} from 'react-scroll'; //Imports scroller mixin, can use as scroller.scrollTo()
-import { Menu, Button, Card, Icon,Image, Form, TextArea } from 'semantic-ui-react';
+import scrollToComponent from 'react-scroll-to-component';
+import { Menu } from 'semantic-ui-react';
 import './Header.css';
 import Staff from '../Staff';
 import Project from '../Porject';
-import Conectus from '../Conectus'
+import Conectus from '../Conectus';
+import Footer from '../Footer';
 const s = {
     title:{
  	float: 'left',
@@ -47,9 +47,9 @@ const s = {
 		direction: 'rtl',
 		width: '100%',
 		position: 'fixed',
-		opacity:  0.9,
+		opacity:  0.8,
 		display: 'block',
-		background: '#333333',
+		background: '#000000',
 		top: '0',
 		right: '0',
 		left: '0',
@@ -68,43 +68,30 @@ const s = {
 		right: '38%'
 	},
 	color: {
-    	color: '#e4ff00',
+    	color: 'white',
 		fontWeight: 'bold'
 	},
 	color1: {
-    	color: '#5a227e',
+    	color: 'black',
 		fontWeight: 'bold'
-	}
+	},
+
+
 
 };
-const extra = (
-	<a>
-		<Icon name='facebook square' />
-	</a>
-);
-const extraa = (
-	<a>
-		<Icon name='facebook square' />
-	</a>
-);
-// Or Access Link,Element,etc as follows
-let Link       = Scroll.Link;
-let Element    = Scroll.Element;
-let Events     = Scroll.Events;
-let scroll     = Scroll.animateScroll;
-let scrollSpy  = Scroll.scrollSpy;
 class Header extends Component {
+
 	componentDidMount(){
 		window.addEventListener('scroll', this.handleChange);
+		scrollToComponent(this.proje, {offset: 0, align: 'bottom', duration: 500, ease:'inExpo'});
 	};
-
-	state = {
+	state ={
 		change: false,
 		scroll: false
 	};
 
-
 	handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+
 	handleChange = () => {
 		if (window.pageYOffset > 500)
 			this.setState({
@@ -115,18 +102,20 @@ class Header extends Component {
 				scroll: false
 			})
 	};
-	scrollToService = () => {
-		window.scrollTo(0, 570)
+
+	handleClick1 = () => {
+		scrollToComponent(this.staff, {offset: -137, align: 'middle', duration: 1500, ease:'inExpo'})
 	};
-	scrollToProject = () => {
-		window.scrollTo(0, 1350)
+	handleClick2 = () => {
+		scrollToComponent(this.project, { offset: -70, align: 'top', duration: 1400})
 	};
-	scrollToContact = () => {
-		window.scrollTo(0, 2600)
+	handleClick3 = () => {
+		scrollToComponent(this.conectus, { offset: -1100, align: 'middle', duration: 1300, ease:'inCirc'})
 	};
-	scrollToHome = () => {
-		window.scrollTo(0, 0)
+	handleClick4 = () => {
+		scrollToComponent(this.four, {offset: 0, align: 'middle', duration: 500, ease:'inExpo'})
 	};
+
 	render() {
 		const { activeItem, scroll } = this.state;
 		return (
@@ -140,58 +129,65 @@ class Header extends Component {
 								<Menu.Item>
 										<img style={s.img} src= 'https://upload.wikimedia.org/wikipedia/fr/5/5c/Brabus_logo_2.svg' />
 								</Menu.Item>
-
-								<Menu.Item
-									name='صفحه ی اصلی'
-									active={activeItem === 'صفحه ی اصلی'}
-									onClick={this.handleItemClick && this.scrollToHome}
-								>
-									<div style={scroll ? s.color : s.color1}>
-										صفحه ی اصلی
-									</div>
-								</Menu.Item>
-
-								<Menu.Item
-									name='سرویس ها'
-									active={activeItem === 'سرویس ها'}
-									onClick={this.handleItemClick && this.scrollToService}
-								>
-									<div style={scroll ? s.color : s.color1}>
-										سرویس ها
-									</div>
-								</Menu.Item>
-
-								<Menu.Item
-									name='پروژه ها'
-									active={activeItem === 'پروژه ها'}
-									onClick={this.handleItemClick && this.scrollToProject}
-								>
-									<div style={scroll ? s.color : s.color1}>
-									پروژه ها
-									</div>
-								</Menu.Item>
-								<Menu.Item
-									name=' ارتباط با ما '
-									active={activeItem === 'ارتباط با ما'}
-									onClick={this.handleItemClick && this.scrollToContact}
-								>
-									<div style={scroll ? s.color : s.color1}>
-										ارتباط با ما
-									</div>
-								</Menu.Item>
-
+								   <Menu.Item
+									   name='صفحه ی اصلی'
+									   active={activeItem === 'صفحه ی اصلی'}
+									   onClick={this.handleItemClick && this.handleClick1}
+								   >
+									   <div style={scroll ? s.color : s.color1}>
+										   صفحه ی اصلی
+									   </div>
+								   </Menu.Item>
+							        <Menu.Item
+								        name='سرویس ها'
+								        active={activeItem === 'سرویس ها'}
+								        onClick={this.handleItemClick && this.handleClick1}
+							        >
+								        <div style={scroll ? s.color : s.color1}>
+									        سرویس ها
+								        </div>
+							        </Menu.Item>
+									<Menu.Item
+										name='پروژه ها'
+										active={activeItem === 'پروژه ها'}
+										onClick={this.handleItemClick && this.handleClick2}
+									>
+										<div style={scroll ? s.color : s.color1}>
+											پروژه ها
+										</div>
+									</Menu.Item>
+								    <Menu.Item
+									    name=' ارتباط با ما '
+									    active={activeItem === 'ارتباط با ما'}
+									    onClick={this.handleItemClick && this.handleClick3}
+								    >
+									    <div style={scroll ? s.color : s.color1}>
+										    ارتباط با ما
+									    </div>
+								    </Menu.Item>
 							</Menu>
 						</div>
 			    </div>
-				<div>
-					<Staff/>
-				</div>
-				<div>
-					<Project/>
-				</div>
-				<div>
-					<Conectus/>
-				</div>
+				<section className="staff" ref={(section) => {this.staff = section;}}>
+					<div>
+						<Staff/>
+					</div>
+				</section>
+				<section className="project" ref={(section) => {this.project = section;}}>
+					<div>
+						<Project/>
+					</div>
+				</section>
+				<section className="conectus" ref={(section) => {this.conectus = section;}}>
+					<div>
+						<Conectus/>
+					</div>
+				</section>
+				<section className="conectus" ref={(section) => {this.conectus = section;}}>
+					<div>
+						<Footer/>
+					</div>
+				</section>
 			</div>
 		);
 	}
