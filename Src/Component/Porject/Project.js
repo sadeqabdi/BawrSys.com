@@ -24,7 +24,7 @@ class Project extends Component {
 					<div style={{backgroundColor: '#fffff'}}>
 						<div>
 							<section
-								style={{display: 'flex', margin: 'auto',  width: '1200px'}}
+							    className="section1"
 							>
 								<Image src='https://i.ytimg.com/vi/6RJaREKVnDA/maxresdefault.jpg' size='medium' />
 								<div style={{margin: 'auto'}}>
@@ -41,7 +41,7 @@ class Project extends Component {
 									</p>
 								</div>
 							</section>
-							<section style={{display: 'flex', margin: 'auto', justifyContent: 'space-between',  width: '1200px'}}>
+							<section className="section2">
 								<div style={{margin: 'auto'}}>
 									<p style={{marginLeft: '110px', marginTop: '60px', fontSize: '30px', fontWight: 'bold'}}>
 										<p><a href="https://www.hotorder.co.uk">سایت سفارش غذای آنلاین</a></p>
@@ -57,7 +57,7 @@ class Project extends Component {
 								</div>
 									<Image src='http://www.udeserve.in/blog/wp-content/uploads/2013/09/Website.jpg' size='medium' />
 							</section>
-							<section style={{display: 'flex', margin: 'auto',  width: '1200px'}}>
+							<section className="section3">
 								<Image src='https://websitesetup.org/wp-content/uploads/2013/11/bluehost-landing-page.png' size='medium' />
 								<div style={{margin: 'auto'}}>
 									<p style={{marginRight: '150px', marginTop: '120px', fontSize: '30px', fontWight: 'bold'}}>

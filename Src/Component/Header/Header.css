@@ -1,14 +1,36 @@
 .ui.secondary.menu {
     font-family: 'Amiri', serif;
     color: red;
-    font-size: 25px;
+    font-size: 22px;
+}
+@media(max-width: 1210px){
+    .ui.secondary.menu {
+        font-size: 20px;
+    }
+}
+@media(max-width: 990px){
+    .ui.secondary.menu {
+        font-size: 15px;
+    }
+}
+@media(max-width: 770px){
+    .ui.secondary.menu {
+        font-size: 10px;
+    }
+}
+@media(max-width: 460px){
+    .ui.secondary.menu {
+        font-size: 6px;
+    }
 }
 .ui.stackable.menu  {
     font-family: 'Amiri', serif;
     background: none;
+
 }
 .ui.secondary.menu .item{
     color: white;
+
 }
 .ui.two.cards{
     width: 1100px;
@@ -51,6 +73,21 @@
 .ui.button.But{
     width: 1000px;
 }
+@media (max-width: 1080px) {
+    .ui.button.But {
+        width: 800px;
+    }
+}
+@media (max-width: 880px) {
+    .ui.button.But {
+        width: 600px;
+    }
+}
+@media (max-width: 670px) {
+    .ui.button.But {
+        width: 400px;
+    }
+}
 .ui.input{
     background-color: #f8f8f8;
     height: 55px;
@@ -58,10 +95,166 @@
 .ui.mini.form{
     width: 1000px;
 }
+@media (max-width: 1080px) {
+    .ui.mini.form{
+        width: 800px;
+    }
+}
+@media (max-width: 880px) {
+    .ui.mini.form{
+        width: 600px;
+    }
+}
+@media (max-width: 670px) {
+    .ui.mini.form{
+        width: 400px;
+    }
+}
 .ui.medium.image{
     width: 600px;
     height: 100%;
 }
+@media (max-width: 1250px) {
+    .ui.medium.image{
+        width: 460px;
+        height: 100%;
+    }
+}
+.section1{
+    width : 1200px;
+    margin: auto;
+    display: flex;
+}
+@media (max-width: 1250px) {
+    .section1{
+        width : 910px;
+    }
+}
+@media (max-width: 950px) {
+    .section1{
+        width : 700px;
+    }
+}
+
+.section2{
+    width : 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 1250px) {
+    .section2{
+        width : 910px;
+    }
+}
+@media (max-width: 950px) {
+    .section2{
+        width : 700px;
+    }
+}
+
+.section3{
+    width : 1200px;
+    margin: auto;
+    display: flex;
+}
+@media (max-width: 1250px) {
+    .section3{
+        width : 910px;
+    }
+}
+@media (max-width: 950px) {
+    .section3{
+        width : 700px;
+    }
+}
 .ui.positive.button{
     background: #3D9199;
 }
+.intro{
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    position: relative;
+    background: url("https://i1.wp.com/www.hcmc.ae/wp-content/uploads/2017/07/rethinking-.jpg?fit=3000%2C2002&ssl=1") fixed;
+}
+@media(max-width: 1120px){
+    .content {
+          width: 100%;
+    }
+}
+@media(max-width: 1100px){
+    .staff1 {
+        width: 240px;
+        font-size: 25px;
+    }
+}@media(max-width: 1100px){
+    .staff2 {
+        width: 240px;
+        font-size: 25px;
+    }
+}
+@media(max-width: 1100px){
+    .staff3 {
+        width: 240px;
+        font-size: 25px;
+    }
+}
+@media(max-width: 958px){
+    .hStaff {
+        font-size: 28px;
+    }
+}
+
+
+@media(max-width: 1080px){
+    .footer1{
+        font-size: 16px;
+    }
+}
+@media(max-width: 1080px){
+    .footer2{
+        font-size: 16px;
+    }
+}
+@media(max-width: 1080px){
+    .footer3{
+        font-size: 16px;
+    }
+}
+
+
+@media(max-width: 830px){
+    .footer1{
+        font-size: 12px;
+        margin-left: 135px;
+    }
+}
+@media(max-width: 830px){
+    .footer2{
+        font-size: 12px;
+        margin-left: 35px;
+    }
+}
+@media(max-width: 830px){
+    .footer3{
+        font-size: 12px;
+    }
+}
+@media(max-width: 700px){
+    .footer1{
+        font-size: 8px;
+    }
+}
+@media(max-width: 700px){
+    .footer2{
+        font-size: 8px;
+    }
+}
+@media(max-width: 700px){
+    .footer3{
+        font-size: 8px;
+    }
+}
+
