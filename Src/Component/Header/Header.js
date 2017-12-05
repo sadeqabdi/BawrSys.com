@@ -6,6 +6,7 @@ import Drawer from 'material-ui/Drawer';
 import './Header.css';
 import Staff from '../Staff';
 import Typist from 'react-typist';
+import { Transition } from 'semantic-ui-react';
 import Project from '../Porject';
 import Conectus from '../Conectus';
 import Footer from '../Footer';
@@ -24,7 +25,7 @@ const s = {
 	},
     intro: {
 		display: 'block',
-		height: '100%',
+		height: '160%',
 		width: '100%',
         background: 'url(https://i1.wp.com/www.hcmc.ae/wp-content/uploads/2017/07/rethinking-.jpg?fit=3000%2C2002&ssl=1) fixed',
 		backgroundSize: 'cover',
@@ -43,7 +44,8 @@ const s = {
 		top: '0',
 		right: '0',
 		left: '0',
-		height: '100px',
+		zIndex: 1,
+		height: '80px',
 		overflow: 'hidden',
 		transitionDuration: '.333s',
 	},
@@ -52,20 +54,24 @@ const s = {
 		width: '100%',
 		position: 'fixed',
 		display: 'block',
-		background: 'rgba(0, 0, 0, 0.8)',
 		top: '0',
 		right: '0',
 		left: '0',
-		height: '50px',
+		background: 'black',
+		color: 'black',
+		zIndex: 1,
+		height: '80px',
 		overflow: 'hidden',
 		transitionDuration: '.333s',
-		zIndex: 1,
-		opacity: '0.9'
+		boxShadow: '5px 5px 20px rgba(0, 0, 0,0.5)',
+		opacity: 0.8
 	},
 	img: {
     	position: 'relative',
 		height: '100%',
-		width: '80px'
+		width: '65px',
+		marginTop: '5px',
+		marginLeft: '45px',
 	},
 	company: {
     	position: 'relative',
@@ -73,12 +79,10 @@ const s = {
 		right: '38%'
 	},
 	color: {
-    	color: 'white',
-		fontWeight: 'bold'
+    	color: 'black',
 	},
 	color1: {
-    	color: 'white',
-		fontWeight: 'bold'
+    	color: 'black',
 	},
 	color3: {
     	color: '#e4ff00'
@@ -91,33 +95,47 @@ const s = {
 		right: 0,
 		bottom: 0,
 		left: 0,
-		background : 'rgba(0,0,0,.4)'
+		background : 'rgba(0,0,0,.5)'
 	},
-
+	fColor: {
+    	color: '#e4ff00'
+	},
+	fColor1: {
+    	color: 'white'
+	}
 
 
 };
+
+const transitions = [
+	'fade', 'fade up', 'fade down', 'fade left', 'fade right',
+];
+const options = transitions.map(name => ({ key: name, text: name, value: name }));
 class Header extends Component {
 
 	componentDidMount(){
 		window.addEventListener('scroll', this.handleChange);
+		window.addEventListener('scroll', this.handleChange3);
+		window.addEventListener('scroll', this.handleChange4);
 		window.addEventListener('resize', this.handleChange2);
+		window.addEventListener('scroll', this.handleChange5);
+		window.addEventListener('scroll', this.handleChange6);
 		scrollToComponent(this.proje, {offset: 0, align: 'bottom', duration: 500, ease:'inExpo'});
 		// If you want to pass more options as props, simply add
 		// your desired props to this destructuring assignment.
 		const  strings  = [
-			'Marketers Build Landing Pages|',
-			'Designers Create W ebsites|',
-			'Founders Create Logos|',
-			'Marketers Build Landing Pages|',
-			'Entrepreneurs Create Mobile Apps|',
-			'Developers Learn New Skills|'
-		]
+			'شما را در ساخت صفحات فرود بازاریابان',
+			'شما را در ساخت دیزاین وب سایت',
+			'شما را در ساخت و تولید لوگو',
+			'شما را در ساخت و پیاده سازی اپلیکیشن موبایل',
+			'شما را در آموزش طراحی وب سایت',
+
+		];
 		// You can pass other options here, such as typing speed, back speed, etc.
 		const options = {
 			strings: strings,
-			typeSpeed: 50,
-			backSpeed: 50
+			typeSpeed: 80,
+			backSpeed: 210,
 		};
 		// this.el refers to the <span> in the render() method
 		this.typed = new Typed(this.el, options);
@@ -125,7 +143,15 @@ class Header extends Component {
 	state ={
 		change: false,
 		scroll: false,
-		resize: false
+		scroll2: false,
+		scroll3: false,
+		scroll4: false,
+		scroll5: false,
+		resize: false,
+		animation: transitions[0],
+		duration: 500,
+		visible: true,
+		Reset: false
 	};
 	handleToggle = () => this.setState({open: !this.state.open});
 
@@ -134,7 +160,7 @@ class Header extends Component {
 	handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
 	handleChange = () => {
-		if (window.pageYOffset > 580)
+		if (window.pageYOffset > 130)
 			this.setState({
 				scroll: true
 			})
@@ -143,6 +169,55 @@ class Header extends Component {
 				scroll: false
 			})
 	};
+	handleChange6 = () => {
+		if (window.pageYOffset >= 0)
+			this.setState({
+				scroll5: true,
+			})
+		else
+			this.setState({
+				scroll5: false
+			})
+	};
+	handleChange3 = () => {
+		if (window.pageYOffset > 950)
+			this.setState({
+				scroll2: true,
+				scroll5: false
+			})
+		else
+			this.setState({
+				scroll2: false
+			})
+	};
+	handleChange4 = () => {
+		if (window.pageYOffset > 1750)
+			this.setState({
+				scroll3: true,
+				scroll2: false,
+				scroll5: false
+			})
+		else
+			this.setState({
+				scroll3: false
+			})
+	};
+	handleChange5 = () => {
+		if (window.pageYOffset > 3000)
+			this.setState({
+				scroll4: true,
+				scroll2: false,
+				scroll3: false,
+				scroll5: false  
+			})
+		else
+			this.setState({
+				scroll4: false
+			})
+	};
+	handleChange1 = (e, { name, value }) => this.setState({ [name]: value })
+
+	handleVisibility = () => this.setState({ visible: !this.state.visible })
 
 	handleClick1 = () => {
 		scrollToComponent(this.staff, {offset: -67, align: 'middle', duration: 1500, ease:'inExpo'})
@@ -173,163 +248,158 @@ class Header extends Component {
 			})
 		}
 	};
-
 	render() {
-		const { activeItem, scroll, resize } = this.state;
+		const { activeItem, scroll, resize, scroll2, scroll3, scroll4, scroll5 } = this.state;
 		return (
 		<MuiThemeProvider>
 			<div style={s.container}>
 					<div style={s.intro}
 					     className="intro"
 					>
-						<div style={s.intro2}>
-							{
-								resize
-									?
-									<div>
-										<div
-											onClick={this.handleToggle}
-											style={scroll ? s.header2 : s.header}
-										>
-											<i style={{marginRight: '20px', marginTop: '15px', cursor: 'pointer'}} className="material-icons">reorder</i>
-										</div>
-										<Drawer
-											docked={false}
-											width={200}
-											open={this.state.open}
-											onRequestChange={(open) => this.setState({open})}
-										>
-											<Menu.Item
-												name='صفحه ی اصلی'
-												active={activeItem === 'صفحه ی اصلی'}
-												onClick={this.handleItemClick && this.handleClick1}
-											>
-												<div style={scroll ? s.color : s.color1}>
-													صفحه ی اصلی
-												</div>
-											</Menu.Item>
-											<Menu.Item
-												name='سرویس ها'
-												active={activeItem === 'سرویس ها'}
-												onClick={this.handleItemClick && this.handleClick1}
-											>
-												<div style={scroll ? s.color : s.color1}>
-													سرویس ها
-												</div>
-											</Menu.Item>
-											<Menu.Item
-												name='پروژه ها'
-												active={activeItem === 'پروژه ها'}
-												onClick={this.handleItemClick && this.handleClick2}
-											>
-												<div style={scroll ? s.color : s.color1}>
-													پروژه ها
-												</div>
-											</Menu.Item>
-											<Menu.Item
-												name=' ارتباط با ما '
-												active={activeItem === 'ارتباط با ما'}
-												onClick={this.handleItemClick && this.handleClick3}
-											>
-												<div style={scroll ? s.color : s.color1}>
-													ارتباط با ما
-												</div>
-											</Menu.Item>
-										</Drawer>
-									</div>
-									:
+						{
+							resize
+								?
+								<div>
 									<div
+										onClick={this.handleToggle}
 										style={scroll ? s.header2 : s.header}
-
 									>
-										<div style={{display: 'flex', justifyContent: 'space-between'}}>
-											<div>
-												<Menu
-													secondary
+										<i style={{marginRight: '20px', marginTop: '15px', cursor: 'pointer'}} className="material-icons">reorder</i>
+									</div>
+									<Drawer
+										docked={false}
+										width={200}
+										open={this.state.open}
+										onRequestChange={(open) => this.setState({open})}
+									>
+										<Menu.Item
+											name='صفحه ی اصلی'
+											active={activeItem === 'صفحه ی اصلی'}
+											onClick={this.handleItemClick && this.handleClick1}
+										>
+											<div style={scroll ? s.color : s.color1}>
+												صفحه ی اصلی
+											</div>
+										</Menu.Item>
+										<Menu.Item
+											name='سرویس ها'
+											active={activeItem === 'سرویس ها'}
+											onClick={this.handleItemClick && this.handleClick1}
+										>
+											<div style={scroll ? s.color : s.color1}>
+												سرویس ها
+											</div>
+										</Menu.Item>
+										<Menu.Item
+											name='پروژه ها'
+											active={activeItem === 'پروژه ها'}
+											onClick={this.handleItemClick && this.handleClick2}
+										>
+											<div style={scroll ? s.color : s.color1}>
+												پروژه ها
+											</div>
+										</Menu.Item>
+										<Menu.Item
+											name=' ارتباط با ما '
+											active={activeItem === 'ارتباط با ما'}
+											onClick={this.handleItemClick && this.handleClick3}
+										>
+											<div style={scroll ? s.color : s.color1}>
+												ارتباط با ما
+											</div>
+										</Menu.Item>
+									</Drawer>
+								</div>
+								:
+								<div
+									style={scroll ? s.header2 : s.header}
 
+								>
+									<div style={{display: 'flex', justifyContent: 'space-between'}}>
+										<div>
+											<Menu
+												secondary
+
+											>
+												<Menu.Item
+													name='صفحه ی اصلی'
+													active={activeItem ===  'صفحه ی اصلی'}
+													onClick={this.handleItemClick && this.handleClick1}
 												>
-													<Menu.Item
-														name='صفحه ی اصلی'
-														active={activeItem ===  'صفحه ی اصلی' && s.color3}
-														onClick={this.handleItemClick && this.handleClick1}
-													>
-														<div style={scroll ? s.color : s.color1 && this.handleItemClick ? s.color3 : s.color}>
-															صفحه ی اصلی
-														</div>
-													</Menu.Item>
-													<Menu.Item
-														name='سرویس ها'
-														active={activeItem === 'سرویس ها'}
-														onClick={this.handleItemClick && this.handleClick1}
-													>
-														<div style={scroll ? s.color : s.color1}>
-															سرویس ها
-														</div>
-													</Menu.Item>
-													<Menu.Item
-														name='پروژه ها'
-														active={activeItem === 'پروژه ها'}
-														onClick={this.handleItemClick && this.handleClick2}
-													>
-														<div style={scroll ? s.color : s.color1}>
-															پروژه ها
-														</div>
-													</Menu.Item>
-													<Menu.Item
-														name=' ارتباط با ما '
-														active={activeItem === 'ارتباط با ما'}
-														onClick={this.handleItemClick && this.handleClick3}
-													>
-														<div style={scroll ? s.color : s.color1}>
-															ارتباط با ما
-														</div>
-													</Menu.Item>
-												</Menu>
-											</div>
-											<div>
-												<img style={s.img} src= {require(`../../../public/image/finalLogo.png`)} />
-											</div>
+													<div style={scroll5 ? s.fColor : s.fColor1}>
+														صفحه ی اصلی
+													</div>
+												</Menu.Item>
+												<Menu.Item
+													name='سرویس ها'
+													active={activeItem === 'سرویس ها'}
+													onClick={this.handleItemClick && this.handleClick1}
+												>
+													<div style={scroll2 ? s.fColor : s.fColor1}>
+														سرویس ها
+													</div>
+												</Menu.Item>
+												<Menu.Item
+													name='پروژه ها'
+													active={activeItem === 'پروژه ها'}
+													onClick={this.handleItemClick && this.handleClick2}
+												>
+													<div style={scroll3 ? s.fColor : s.fColor1}>
+														پروژه ها
+													</div>
+												</Menu.Item>
+												<Menu.Item
+													name=' ارتباط با ما '
+													active={activeItem === 'ارتباط با ما'}
+													onClick={this.handleItemClick && this.handleClick3}
+												>
+													<div style={scroll4 ? s.fColor : s.fColor1}>
+														ارتباط با ما
+													</div>
+												</Menu.Item>
+											</Menu>
+										</div>
+										<div style={{height: '100%'}}>
+											<img style={s.img} src= {require(`../../../public/image/Screen Shot 2017-11-23 at 18.12.39.png`)} />
 										</div>
 									</div>
-							}
-							<div
-								style={{display: 'flex',
-									marginLeft: '5%',
-									marginTop: '15%',
-									fontSize: '50px',
-									direction: 'ltr',
-									fontWeight: 'bold'}}
-							>
+								</div>
+						}
+						<div style={s.intro2}>
+							<div style={{marginRight: '2%'}}>
+								<div
+									style={{textAlign: 'right',
+										marginTop: '22%',
+										fontSize: '35px',
+										direction: 'ltr',
+									}}
+								>
 								<span style={{ color: 'white'}}>
-										Wellcome To
-									</span>
-								    <span style={{color: 'white', marginLeft: '10px'}}>
-										<srtong>
-											BawerSystem
-										</srtong>
-									</span>
-							</div>
-							<br/>
-							<div>
-								<div className="wrap">
-									<div
-										style={{
-											marginLeft: '2%',
-											marginTop: '2%',
-											fontSize: '40px',
-											direction: 'ltr',
-											fontWeight: 'bold',
+								  به سایت شرکت باور سیستم خوش آمدید
+								</span>
+								</div>
+								<br/>
+								<div>
+									<div className="wrap">
+										<div
+											style={{
+												marginLeft: '2%',
+												marginTop: '2%',
+												fontSize: '25px',
+												direction: 'rtl',
+												fontWeight: 'bold',
 
-										}}
-										className="type-wrap">
-										   <span style={{marginLeft: '45px', color: 'white', marginRight: '10px'}}>
-									           We help
+											}}
+											className="type-wrap">
+										   <span style={{marginLeft: '5px', color: 'white', marginRight: '10px'}}>
+									           ما کمک می کنیم
 								          </span>
-							          <span
-								          style={{ whiteSpace: 'pre', color: '#e4ff00' }}
-								          ref={(el) => { this.el = el; }}
-							          >
+											<span
+												style={{ whiteSpace: 'pre', color: '#e4ff00' }}
+												ref={(el) => { this.el = el; }}
+											>
 							          </span>
+										</div>
 									</div>
 								</div>
 							</div>

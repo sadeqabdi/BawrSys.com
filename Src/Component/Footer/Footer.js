@@ -16,7 +16,7 @@ class Footer extends Component {
 	render () {
 		// return
 		return (
-			<div style={{height: '450px'}}>
+			<div style={{height: '250px'}}>
 				<div style={s.footer}>
 					<div style={{display: 'flex', justifyContent: 'center', fontSize: '25px'}} className="footer">
 						<div style={{marginLeft: '70px', marginTop: '110px'}} className="footer1" >

@@ -12,7 +12,7 @@ class Staff extends Component {
 			<div>
 				<div style={{background: '#e5f0f1', height: '100%'}}>
 					<h1 style={{textAlign: 'center', color: 'black',position: 'relative', top: '60px'}} className="hStaff">
-						آنچه ما انجام می دهیم ...
+						حرفه ی ما
 					</h1>
 					<div
 						style={{display: 'flex',

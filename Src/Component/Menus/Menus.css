@@ -1,8 +1,7 @@
 .ui.secondary.menu {
-    font-family: 'Yekan', Tahoma;
+    font-family: 'Amiri', serif;
     color: red;
     font-size: 22px;
-  margin-top: 6px;
 }
 @media(max-width: 1210px){
     .ui.secondary.menu {
@@ -25,12 +24,12 @@
     }
 }
 .ui.stackable.menu  {
-    font-family: 'Yekan', Tahoma;
+    font-family: 'Amiri', serif;
     background: none;
 
 }
 .ui.secondary.menu .item{
-    color: white;
+    color: black;
 
 }
 .ui.two.cards{
@@ -41,7 +40,7 @@
     color: white;
 }
 .ui.positive.button{
-    font-family: 'Yekan', Tahoma;
+    font-family: 'Amiri', serif;
     color: black;
     background-color: white;
 }
@@ -49,7 +48,7 @@
     background: red;
 }
 .ui.card.width{
-    font-family: 'Yekan', Tahoma;
+    font-family: 'Amiri', serif;
     width: 270px;
     height: 365px;
 }
@@ -67,12 +66,12 @@
     margin-top: 7%;
 }
 .ui.button{
-    font-family: 'Yekan', Tahoma;
+    font-family: 'Amiri', serif;
     color: white;
     background-color: #5a227e;
 }
 .ui.button.But{
-    width: 800px;
+    width: 1000px;
 }
 @media (max-width: 1080px) {
     .ui.button.But {
@@ -166,7 +165,7 @@
 }
 @media (max-width: 950px) {
     .section3{
-        width : 701px;
+        width : 700px;
     }
 }
 .ui.positive.button{
@@ -182,7 +181,7 @@
 }
 @media(max-width: 1120px){
     .content {
-          width: 100%;
+        width: 100%;
     }
 }
 @media(max-width: 1100px){
@@ -204,7 +203,7 @@
 }
 @media(max-width: 958px){
     .hStaff {
-        font-size: 20px;
+        font-size: 28px;
     }
 }
 
@@ -232,7 +231,7 @@
         margin-left: 135px;
     }
 }
-@media(max-width: 835px){
+@media(max-width: 830px){
     .footer2{
         font-size: 12px;
         margin-left: 35px;

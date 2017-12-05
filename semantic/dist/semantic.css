@@ -14842,7 +14842,7 @@ ol.ui.horizontal.list li:before,
   border-top: none;
 }
 
-/* Sub Menu */
+/* Sub Menus */
 
 .ui.divided.list:not(.horizontal) .list > .item:first-child {
   border-top-width: 1px;
@@ -14945,7 +14945,7 @@ ol.ui.horizontal.list li:before,
   padding-bottom: 0.21428571em;
 }
 
-/* Sub Menu */
+/* Sub Menus */
 
 .ui.celled.list .item .list > .item {
   border-width: 0px;
@@ -21208,7 +21208,7 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 /*
- * # Semantic - Menu
+ * # Semantic - Menus
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -21223,7 +21223,7 @@ ol.ui.horizontal.list li:before,
 *******************************/
 
 /*--------------
-      Menu
+      Menus
 ---------------*/
 
 .ui.menu {
@@ -21258,7 +21258,7 @@ ol.ui.horizontal.list li:before,
 }
 
 /*--------------
-    Sub-Menu
+    Sub-Menus
 ---------------*/
 
 .ui.menu .menu {
@@ -21437,7 +21437,7 @@ ol.ui.horizontal.list li:before,
   margin: 0em 0em 0em 1em;
 }
 
-/* Menu */
+/* Menus */
 
 .ui.menu .dropdown.item .menu {
   min-width: calc(100% - 1px);
@@ -21452,7 +21452,7 @@ ol.ui.horizontal.list li:before,
   flex-direction: column !important;
 }
 
-/* Menu Items */
+/* Menus Items */
 
 .ui.menu .ui.dropdown .menu > .item {
   margin: 0;
@@ -21705,7 +21705,7 @@ ol.ui.horizontal.list li:before,
 *******************************/
 
 /*------------------
-Floated Menu / Item
+Floated Menus / Item
 -------------------*/
 
 /* Left Floated */
@@ -21804,7 +21804,7 @@ Floated Menu / Item
   display: none !important;
 }
 
-/*--- Sub Menu ---*/
+/*--- Sub Menus ---*/
 
 .ui.vertical.menu .item > .menu {
   margin: 0.5em -1.14285714em 0em;
@@ -22175,7 +22175,7 @@ Floated Menu / Item
   box-shadow: none;
 }
 
-/* Sub Menu */
+/* Sub Menus */
 
 .ui.vertical.secondary.menu .item:not(.dropdown) > .menu {
   margin: 0em -0.92857143em;
@@ -22200,7 +22200,7 @@ Floated Menu / Item
   border-radius: 0em;
 }
 
-/* Sub Menu */
+/* Sub Menus */
 
 .ui.vertical.secondary.menu .item > .menu .item {
   background-color: transparent;
@@ -22350,7 +22350,7 @@ Floated Menu / Item
 }
 
 /*--------------
-    Text Menu
+    Text Menus
 ---------------*/
 
 .ui.text.menu {
@@ -22435,7 +22435,7 @@ Floated Menu / Item
   margin: 0.57142857em 0em 0.71428571em;
 }
 
-/* Vertical Sub Menu */
+/* Vertical Sub Menus */
 
 .ui.vertical.text.menu .item:not(.dropdown) > .menu {
   margin: 0em;
@@ -22502,7 +22502,7 @@ Floated Menu / Item
     Icon Only
 ---------------*/
 
-/* Vertical Menu */
+/* Vertical Menus */
 
 .ui.vertical.icon.menu {
   display: inline-block;
@@ -22556,7 +22556,7 @@ Floated Menu / Item
    Labeled Icon
 ---------------*/
 
-/* Menu */
+/* Menus */
 
 .ui.labeled.icon.menu {
   text-align: center;
@@ -22726,7 +22726,7 @@ Floated Menu / Item
   box-shadow: none;
 }
 
-/* Menu Item */
+/* Menus Item */
 
 .ui.inverted.menu .item,
 .ui.inverted.menu .item > a:not(.ui) {
@@ -22748,7 +22748,7 @@ Floated Menu / Item
   background: rgba(255, 255, 255, 0.08);
 }
 
-/* Sub Menu */
+/* Sub Menus */
 
 .ui.vertical.inverted.menu .menu .item,
 .ui.vertical.inverted.menu .menu .item a:not(.ui) {
@@ -23375,7 +23375,7 @@ Floated Menu / Item
   margin-bottom: 0em;
 }
 
-/* Attached Menu Item */
+/* Attached Menus Item */
 
 .ui.top.attached.menu > .item:first-child {
   border-radius: 0.28571429rem 0em 0em 0em;
@@ -28587,7 +28587,7 @@ a.ui.card:hover,
     Coupling
 ---------------*/
 
-/* Menu */
+/* Menus */
 
 .ui.accordion.menu .item .title {
   display: block;
@@ -29699,7 +29699,7 @@ body.dimmable > .dimmer {
 *******************************/
 
 /*--------------
-      Menu
+      Menus
 ---------------*/
 
 .ui.dropdown .menu {
@@ -29772,7 +29772,7 @@ body.dimmable > .dimmer {
 }
 
 /*--------------
-    Menu Item
+    Menus Item
 ---------------*/
 
 .ui.dropdown .menu > .item {
@@ -29824,7 +29824,7 @@ body.dimmable > .dimmer {
 }
 
 /*--------------
-  Menu Divider
+  Menus Divider
 ---------------*/
 
 .ui.dropdown .menu > .header {
@@ -29891,7 +29891,7 @@ body.dimmable > .dimmer {
 }
 
 /*--------------
-    Sub Menu
+    Sub Menus
 ---------------*/
 
 .ui.dropdown .menu .menu {
@@ -29967,17 +29967,17 @@ body.dimmable > .dimmer {
 *******************************/
 
 /*--------------
-      Menu
+      Menus
 ---------------*/
 
-/* Remove Menu Item Divider */
+/* Remove Menus Item Divider */
 
 .ui.dropdown .ui.menu > .item:before,
 .ui.menu .ui.dropdown .menu > .item:before {
   display: none;
 }
 
-/* Prevent Menu Item Border */
+/* Prevent Menus Item Border */
 
 .ui.menu .ui.dropdown .menu .active.item {
   border-left: none;
@@ -29996,7 +29996,7 @@ body.dimmable > .dimmer {
       Label
 ---------------*/
 
-/* Dropdown Menu */
+/* Dropdown Menus */
 
 .ui.label.dropdown .menu {
   min-width: 100%;
@@ -30086,7 +30086,7 @@ select.ui.dropdown {
   min-width: 0px;
 }
 
-/*  Selection Menu */
+/*  Selection Menus */
 
 .ui.selection.dropdown .menu {
   overflow-x: hidden;
@@ -30144,7 +30144,7 @@ select.ui.dropdown {
   }
 }
 
-/* Menu Item */
+/* Menus Item */
 
 .ui.selection.dropdown .menu > .item {
   border-top: 1px solid #FAFAFA;
@@ -30324,7 +30324,7 @@ select.ui.dropdown {
   color: rgba(115, 115, 115, 0.87) !important;
 }
 
-/* Search Menu */
+/* Search Menus */
 
 .ui.search.dropdown .menu {
   overflow-x: hidden;
@@ -30485,7 +30485,7 @@ select.ui.dropdown {
         Active
 ----------------------*/
 
-/* Menu Item Active */
+/* Menus Item Active */
 
 .ui.dropdown .menu .active.item {
   background: transparent;
@@ -30500,7 +30500,7 @@ select.ui.dropdown {
         Hover
 ----------------------*/
 
-/* Menu Item Hover */
+/* Menus Item Hover */
 
 .ui.dropdown .menu > .item:hover {
   background: rgba(0, 0, 0, 0.05);
@@ -30730,7 +30730,7 @@ select.ui.dropdown {
   border-radius: 0.28571429rem !important;
 }
 
-/* Leftward Opening Menu */
+/* Leftward Opening Menus */
 
 .ui.dropdown > .left.menu {
   left: auto !important;
@@ -30769,7 +30769,7 @@ select.ui.dropdown {
      Upward
 ---------------*/
 
-/* Upward Main Menu */
+/* Upward Main Menus */
 
 .ui.upward.dropdown > .menu {
   top: auto;
@@ -30779,7 +30779,7 @@ select.ui.dropdown {
   border-radius: 0.28571429rem 0.28571429rem 0em 0em;
 }
 
-/* Upward Sub Menu */
+/* Upward Sub Menus */
 
 .ui.dropdown .upward.menu {
   top: auto !important;
@@ -30841,7 +30841,7 @@ select.ui.dropdown {
      Simple
 ---------------*/
 
-/*  Selection Menu */
+/*  Selection Menus */
 
 .ui.scrolling.dropdown .menu,
 .ui.dropdown .scrolling.menu {
@@ -31164,7 +31164,7 @@ select.ui.dropdown {
   transform: rotate(-135deg);
 }
 
-/* Reverse Sub-Menu Direction */
+/* Reverse Sub-Menus Direction */
 
 .ui.bottom.pointing.dropdown > .menu .menu {
   top: auto !important;
@@ -31279,7 +31279,7 @@ select.ui.dropdown {
   content: '\f0d7';
 }
 
-/* Sub Menu */
+/* Sub Menus */
 
 .ui.dropdown .menu .item .dropdown.icon:before {
   content: '\f0da' ;
@@ -31290,7 +31290,7 @@ select.ui.dropdown {
   content: "\f0d9" ;
 }
 
-/* Vertical Menu Dropdown */
+/* Vertical Menus Dropdown */
 
 .ui.vertical.menu .dropdown.item > .dropdown.icon:before {
   content: "\f0da" ;
@@ -34579,7 +34579,7 @@ a.ui.nag {
             Sidebar
 *******************************/
 
-/* Sidebar Menu */
+/* Sidebar Menus */
 
 .ui.sidebar {
   position: fixed;

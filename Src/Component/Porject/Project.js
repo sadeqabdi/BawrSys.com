@@ -31,13 +31,6 @@ class Project extends Component {
 									<p style={{marginRight: '150px', marginTop: '50px', fontSize: '30px', fontWight: 'bold'}}>
 										<p><a href="https://www.hotorder.co.uk">سایت خرید و فروش بی واسطه</a></p>
 										<p style={{marginRight: '50px'}}>april 20,2013</p>
-										<div style={{marginRight: '50px'}}>
-											<Button positive>
-												<a href="https://www.harzaan.com" target="_blank"  style={{color: 'white'}}>
-													ورود به سایت
-												</a>
-											</Button>
-										</div>
 									</p>
 								</div>
 							</section>
@@ -46,13 +39,6 @@ class Project extends Component {
 									<p style={{marginLeft: '110px', marginTop: '60px', fontSize: '30px', fontWight: 'bold'}}>
 										<p><a href="https://www.hotorder.co.uk">سایت سفارش غذای آنلاین</a></p>
 										<p style={{marginRight: '50px'}}>april 20,2013</p>
-										<div style={{marginRight: '50px'}} onMouseEnter={s.color}>
-											<Button positive >
-												<a href="https://www.hotorder.co.uk" target="_blank" style={{color: 'white'}}>
-													ورود به سایت
-												</a>
-											</Button>
-										</div>
 									</p>
 								</div>
 									<Image src='http://www.udeserve.in/blog/wp-content/uploads/2013/09/Website.jpg' size='medium' />
@@ -63,13 +49,6 @@ class Project extends Component {
 									<p style={{marginRight: '150px', marginTop: '120px', fontSize: '30px', fontWight: 'bold'}}>
 										<p><a href="https://www.hotorder.co.uk">سایت اشتراک عکس</a></p>
 										<p style={{marginRight: '50px'}}>april 20,2013</p>
-										<div style={{marginRight: '50px'}}>
-											<Button positive>
-												<a href="https://www.fotomantic.com" target="_blank" style={{color: 'white'}}>
-													ورود به سایت
-												</a>
-											</Button>
-										</div>
 									</p>
 								</div>
 							</section>

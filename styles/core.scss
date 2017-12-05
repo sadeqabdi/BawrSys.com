@@ -1,12 +1,19 @@
   //@import 'base';
 //@import '~normalize.css/normalize';
-  @import url('https://fonts.googleapis.com/css?family=Amiri');
 // Some best-practice CSS that's useful for most apps
 // Just remove them if they're not what you want
 html {
   box-sizing: border-box;
-  font-family: 'Amiri', serif;
+  font-family: 'Yekan', Tahoma;
 }
+
+  @font-face {
+    font-family: 'Yekan';
+    src: url('../Font/BYekan.eot');
+    src: url('../Font/BYekan.eot?#iefix') format('embedded-opentype'),
+    url('../Font/BYekan.woff') format('woff'),
+    url('../Font/BYekan.ttf') format('truetype');
+  }
 
 html,
 body {
@@ -16,36 +23,39 @@ body {
   background: #f8f8f8;
   font-size: 20px;
   direction: rtl;
-  font-family: 'Amiri', serif;
-}
+
   /* webkit solution */
-  ::-webkit-input-placeholder { text-align:right; }
+  ::-webkit-input-placeholder {
+    text-align: right;
+  }
   /* mozilla solution */
-  input:-moz-placeholder { text-align:right; }
+  input:-moz-placeholder {
+    text-align: right;
+  }
 
-#app {
-  height: 100%;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+  #app {
+    height: 100%;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
 
-input:required, input:invalid, textarea:required, textarea:invalid {
-  box-shadow: none;
-}
+  input:required, input:invalid, textarea:required, textarea:invalid {
+    box-shadow: none;
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Amiri', serif;
-}
-p, div {
-  font-family: 'Amiri', serif;
-}
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Yekan', Tahoma;
+  }
+  p, div {
+    font-family: 'Yekan', Tahoma;
+  }
 
-a, a:hover, a:visited, a:active a:focus {
-  color: #5a227e
-}
+  a, a:hover, a:visited, a:active a:focus {
+    color: #5a227e
+  }
 
   .fade-enter {
     opacity: 0.01;
@@ -94,6 +104,7 @@ a, a:hover, a:visited, a:active a:focus {
     opacity: 0.01;
     transition: all 100ms ease-in;
   }
+}
 
 /*
   1- Where to find Noto naskh arabic web-font?

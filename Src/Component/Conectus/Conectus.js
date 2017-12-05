@@ -49,7 +49,9 @@ class Conectus extends Component {
 									<TextArea placeholder='به ما بگویید.....' style={{ minHeight: 100 }} />
 								</Form>
 								<br/>
-								<Button type='submit' className='But'>فرستادن</Button>
+								<div style={{textAlign: 'center'}}>
+									<Button type='submit' className='But'>فرستادن</Button>
+								</div>
 							</Form>
 						</div>
 					</div>
