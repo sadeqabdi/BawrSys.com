@@ -18,13 +18,13 @@ class Footer extends Component {
 		return (
 			<div style={{height: '250px'}}>
 				<div style={s.footer}>
-					<div style={{display: 'flex', justifyContent: 'center', fontSize: '25px'}} className="footer">
+					<div style={{display: 'flex', justifyContent: 'center', fontSize: '18px'}} className="footer">
 						<div style={{marginLeft: '70px', marginTop: '110px'}} className="footer1" >
 							<p style={{color: 'white'}}>
-								Sanandaj, Kurdistan Province, Iran
+								Iran , Kurdistan , Sanandaj , Science and Technology Park of kurdistan
 							</p>
 						</div>
-						<div style={{marginLeft: '270px', marginTop: '110px'}} className="footer2" >
+						<div style={{marginLeft: '360px', marginTop: '110px'}} className="footer2" >
 							<p style={{color: 'white'}}>
 								hellow@bawersystem.com
 							</p>
@@ -43,7 +43,7 @@ class Footer extends Component {
 					</div>
 					<div style={{display: 'flex', justifyContent: 'center',marginTop: '70px', fontSize: '12px', color: 'white'}}>
 						<p style={{fontWeight: 'bold'}}>
-							BY BAWERSYSTEM. PROUDLY CREATED WITH WIX.COM
+							تمام حقوق مادی و معنوی این وب سایت برای صاحب ان محفوظ می باشد
 						</p>
 						<Icon  name='copyright'  size='small' />
 					</div>

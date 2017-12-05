@@ -5,7 +5,7 @@ import GoogleMapReact from 'google-map-react';
 import { Button, Form, TextArea } from 'semantic-ui-react';
 const Marker = ({ text }) => (
 	<div>
-		<i className="material-icons">place</i>
+		<i className="material-icons" style={{color: 'red'}}>place</i>
 	</div>
 );
 
@@ -55,7 +55,7 @@ class Conectus extends Component {
 							</Form>
 						</div>
 					</div>
-					<div id="map" style={{height: '370px', display: 'flex', width: '70%', marginBottom: '180px', margin: 'auto', background: '#e5f0f1'}}>
+					<div id="map" style={{height: '370px', display: 'flex', width: '75%', marginBottom: '180px', margin: 'auto', background: '#e5f0f1'}}>
 						<GoogleMapReact
 							bootstrapURLKeys={{key: 'AIzaSyC2DOswCvcynX4cptnSiGYo6Qso6LVfNfI'}}
 							defaultCenter={{

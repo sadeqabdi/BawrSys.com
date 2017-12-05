@@ -26,7 +26,7 @@ class Project extends Component {
 							<section
 							    className="section1"
 							>
-								<Image src='https://i.ytimg.com/vi/6RJaREKVnDA/maxresdefault.jpg' size='medium' />
+								<Image src= {require(`../../../public/image/harzaan.jpg`)} size='medium' />
 								<div style={{margin: 'auto'}}>
 									<p style={{marginRight: '150px', marginTop: '50px', fontSize: '30px', fontWight: 'bold'}}>
 										<p><a href="https://www.hotorder.co.uk">سایت خرید و فروش بی واسطه</a></p>
@@ -41,7 +41,7 @@ class Project extends Component {
 										<p style={{marginRight: '50px'}}>april 20,2013</p>
 									</p>
 								</div>
-									<Image src='http://www.udeserve.in/blog/wp-content/uploads/2013/09/Website.jpg' size='medium' />
+									<Image src='http://www.shahrara.net/upload/images/razeghiapp%20(2).jpg' size='medium' />
 							</section>
 							<section className="section3">
 								<Image src='https://websitesetup.org/wp-content/uploads/2013/11/bluehost-landing-page.png' size='medium' />

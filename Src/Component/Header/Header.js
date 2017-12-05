@@ -64,12 +64,12 @@ const s = {
 		overflow: 'hidden',
 		transitionDuration: '.333s',
 		boxShadow: '5px 5px 20px rgba(0, 0, 0,0.5)',
-		opacity: 0.8
+		opacity: 0.9
 	},
 	img: {
     	position: 'relative',
 		height: '100%',
-		width: '65px',
+		width: '51px',
 		marginTop: '5px',
 		marginLeft: '45px',
 	},
@@ -124,11 +124,11 @@ class Header extends Component {
 		// If you want to pass more options as props, simply add
 		// your desired props to this destructuring assignment.
 		const  strings  = [
-			'شما را در ساخت صفحات فرود بازاریابان',
-			'شما را در ساخت دیزاین وب سایت',
-			'شما را در ساخت و تولید لوگو',
-			'شما را در ساخت و پیاده سازی اپلیکیشن موبایل',
-			'شما را در آموزش طراحی وب سایت',
+			' طراحی و توسعه ی وب سایت',
+			' طراحی و پیاده سازی دیزاین وب سایت',
+			'طراحی و پیاده سازی لوگو',
+			' طراحی و پیاده سازی اپلیکیشن موبایل',
+			'آموزش طراحی وب سایت',
 
 		];
 		// You can pass other options here, such as typing speed, back speed, etc.
@@ -160,7 +160,7 @@ class Header extends Component {
 	handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
 	handleChange = () => {
-		if (window.pageYOffset > 130)
+		if (window.pageYOffset > 110)
 			this.setState({
 				scroll: true
 			})
@@ -174,7 +174,7 @@ class Header extends Component {
 			this.setState({
 				scroll5: true,
 			})
-		else
+		else if(window.pageYOffset > 950)
 			this.setState({
 				scroll5: false
 			})
@@ -220,19 +220,19 @@ class Header extends Component {
 	handleVisibility = () => this.setState({ visible: !this.state.visible })
 
 	handleClick1 = () => {
-		scrollToComponent(this.staff, {offset: -67, align: 'middle', duration: 1500, ease:'inExpo'})
+		scrollToComponent(this.staff, {offset: -150, align: 'middle', duration: 1500, ease:'inExpo'})
 		this.setState({
 			open: false
 		})
 	};
 	handleClick2 = () => {
-		scrollToComponent(this.project, { offset: -50, align: 'top', duration: 1400})
+		scrollToComponent(this.project, { offset: -80, align: 'top', duration: 1400})
 		this.setState({
 			open: false
 		})
 	};
 	handleClick3 = () => {
-		scrollToComponent(this.conectus, { offset: -250, align: 'middle', duration: 1000, ease:'inCirc'})
+		scrollToComponent(this.conectus, { offset: -350, align: 'middle', duration: 1000, ease:'inCirc'})
 		this.setState({
 			open: false
 		})
@@ -360,7 +360,7 @@ class Header extends Component {
 											</Menu>
 										</div>
 										<div style={{height: '100%'}}>
-											<img style={s.img} src= {require(`../../../public/image/Screen Shot 2017-11-23 at 18.12.39.png`)} />
+											<img style={s.img} src= {require(`../../../public/image/Bawer-system-orange-main.png`)} />
 										</div>
 									</div>
 								</div>
@@ -391,8 +391,8 @@ class Header extends Component {
 
 											}}
 											className="type-wrap">
-										   <span style={{marginLeft: '5px', color: 'white', marginRight: '10px'}}>
-									           ما کمک می کنیم
+										   <span style={{marginLeft: '18px', color: 'white', marginRight: '10px'}}>
+									          حرفه ی ما
 								          </span>
 											<span
 												style={{ whiteSpace: 'pre', color: '#e4ff00' }}

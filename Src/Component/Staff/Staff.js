@@ -22,7 +22,7 @@ class Staff extends Component {
 					    className="content"
 					>
 						<div>
-							<div className="staff1" style={{background: '#ffffff', width: '300px', height: '170px', '@media (max-width: 1100px)': {width: '240px'}}}>
+							<div className="staff1" style={{background: '#ffffff', width: '300px', height: '170px',boxShadow: '5px 5px 20px rgba(0, 0, 0,0.2)',}}>
 								<p style={{textAlign: 'center', position: 'relative', top: '60px', fontSize: '35px'}}>
 									طراحی وب سایت
 								</p>
@@ -32,7 +32,7 @@ class Staff extends Component {
 							</div>
 						</div>
 						<div>
-							<div className="staff2" style={{background: '#ffffff', width: '300px', height: '170px	'}}>
+							<div className="staff2" style={{background: '#ffffff', width: '300px', height: '170px',boxShadow: '5px 5px 20px rgba(0, 0, 0,0.2)',}}>
 								<p style={{textAlign: 'center', position: 'relative', top: '60px', fontSize: '35px'}}>
 									مدیریت پروژه
 								</p>
@@ -42,7 +42,7 @@ class Staff extends Component {
 							</div>
 						</div>
 						<div>
-							<div className="staff3" style={{background: '#ffffff', width: '300px', height: '170px	'}}>
+							<div className="staff3" style={{background: '#ffffff', width: '300px', height: '170px',boxShadow: '5px 5px 20px rgba(0, 0, 0,0.2)',}}>
 								<p style={{textAlign: 'center', position: 'relative', top: '60px', fontSize: '35px'}}>
 									طراحی گرافیک
 								</p>
